@@ -1,0 +1,34 @@
+# Arquivos de build do Flatpak
+build-mars-flatpak/
+build-dir/
+export/
+*.flatpak
+.flatpak-builder/
+
+# Arquivos temporários Java
+*.class
+*.jar
+
+# Arquivos de teste temporários
+test_*.png
+images/linuxtoys-*
+
+# IDE e editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db

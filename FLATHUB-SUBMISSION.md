@@ -38,13 +38,20 @@ appstream-util validate-relax io.github.rilsonjoas.MARS.metainfo.xml
 
 #### 3. Submit to Flathub
 
-**Option A: Direct Submission**
-1. Fork the Flathub repository: https://github.com/flathub/flathub
-2. Create new branch for MARS
-3. Add `io.github.rilsonjoas.MARS` to `applications.txt` file
-4. Create Pull Request
+**Option A: Using Current Repository (Recommended - Simpler)**
+1. Your current repository `rilsonjoas/MARS` already contains all necessary files
+2. Fork the Flathub repository: https://github.com/flathub/flathub  
+3. Create new branch for MARS
+4. Add `io.github.rilsonjoas.MARS` to `applications.txt` file
+5. Create Pull Request referencing your repository
 
-**Option B: Dedicated Repository (Recommended)**
+**Option B: Direct Issue Submission (Easiest)**
+1. Go to: https://github.com/flathub/flathub/issues
+2. Create new issue requesting MARS addition
+3. Provide repository link: https://github.com/rilsonjoas/MARS
+4. Flathub team will handle the rest
+
+**Option C: Dedicated Repository (Optional)**
 1. Create new repository: `flathub/io.github.rilsonjoas.MARS`
 2. Add all manifest files
 3. Configure Flathub integration

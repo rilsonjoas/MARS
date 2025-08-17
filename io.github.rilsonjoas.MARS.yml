@@ -2,13 +2,12 @@ app-id: io.github.rilsonjoas.MARS
 runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
-command: /app/bin/mars
+command: mars
 
 finish-args:
   - --share=ipc
-  - --socket=x11
-  - --socket=wayland
-  - --filesystem=home
+  - --socket=wayland 
+  - --socket=fallback-x11
   - --filesystem=xdg-documents
   - --device=dri
 
@@ -28,33 +27,17 @@ modules:
     build-commands:
       - /app/jdk/bin/javac -encoding ISO-8859-1 -cp . $(find . -name "*.java" -not -path "./.flatpak-builder/*")
       - /app/jdk/bin/jar cfm Mars.jar mainclass.txt $(find . -name "*.class") images/ help/ docs/ *.xml *.txt *.properties
-      
-      # Install files
       - install -Dm644 Mars.jar /app/share/mars/Mars.jar
       - install -Dm755 mars-wrapper.sh /app/bin/mars
       - install -Dm644 io.github.rilsonjoas.MARS.desktop /app/share/applications/io.github.rilsonjoas.MARS.desktop
       - install -Dm644 io.github.rilsonjoas.MARS.metainfo.xml /app/share/metainfo/io.github.rilsonjoas.MARS.metainfo.xml
-      
-      # Install icons in multiple resolutions
       - install -Dm644 icons/hicolor/16x16/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/16x16/apps/io.github.rilsonjoas.MARS.png
       - install -Dm644 icons/hicolor/32x32/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/32x32/apps/io.github.rilsonjoas.MARS.png
       - install -Dm644 icons/hicolor/48x48/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/48x48/apps/io.github.rilsonjoas.MARS.png
       - install -Dm644 icons/hicolor/64x64/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/64x64/apps/io.github.rilsonjoas.MARS.png
       - install -Dm644 icons/hicolor/128x128/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/128x128/apps/io.github.rilsonjoas.MARS.png
       - install -Dm644 icons/hicolor/256x256/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/256x256/apps/io.github.rilsonjoas.MARS.png
-      - install -Dm644 icons/hicolor/64x64/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/64x64/apps/io.github.rilsonjoas.MARS.png
-      - install -Dm644 icons/hicolor/128x128/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/128x128/apps/io.github.rilsonjoas.MARS.png
-      - install -Dm644 icons/hicolor/256x256/apps/io.github.rilsonjoas.MARS.png /app/share/icons/hicolor/256x256/apps/io.github.rilsonjoas.MARS.png
-      
     sources:
-      - type: dir
-        path: .
-      
-      - type: file
-        path: mars-wrapper.sh
-        
-      - type: file
-        path: io.github.rilsonjoas.MARS.desktop
-        
-      - type: file
-        path: io.github.rilsonjoas.MARS.metainfo.xml
+      - type: git
+        url: https://github.com/rilsonjoas/io.github.rilsonjoas.MARS.git
+        commit: e9434be2030a59929da49e1e2d091024340a6b5c

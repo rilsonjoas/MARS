@@ -31,8 +31,8 @@
   
   <launchable type="desktop-id">io.github.rilsonjoas.MARS.desktop</launchable>
   
-  <url type="homepage">https://github.com/rilsonjoas/io.github.rilsonjoas.MARS</url>
-  <url type="bugtracker">https://github.com/rilsonjoas/io.github.rilsonjoas.MARS/issues</url>
+  <url type="homepage">https://github.com/rilsonjoas/io.github.rilsonjoas.MARS/</url>
+  <url type="bugtracker">https://github.com/rilsonjoas/io.github.rilsonjoas.MARS/issues/</url>
   
   <developer_name>Pete Sanderson and Kenneth Vollmar</developer_name>
   

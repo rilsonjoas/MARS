@@ -8,7 +8,7 @@
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://openjdk.java.net/projects/jdk/17/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)](https://github.com/rilsonjoas/MARS)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)](https://github.com/rilsonjoas/io.github.rilsonjoas.MARS/)
 [![Flatpak](https://img.shields.io/badge/Flatpak-Ready-green.svg)](https://flathub.org/)
 
 </div>
@@ -116,7 +116,7 @@ If you wish to compile the original MARS project manually (without Flatpak), fol
 
 ```bash
 # Clone the repository
-git clone https://github.com/rilsonjoas/MARS.git
+git clone https://github.com/rilsonjoas/io.github.rilsonjoas.MARS.git
 cd MARS
 
 # Compile
@@ -278,7 +278,7 @@ This project maintains the original MARS license. See [MARSlicense.txt](MARSlice
 ## 📞 Contact
 
 -   **GitHub**: [@rilsonjoas](https://github.com/rilsonjoas)
--   **Issues**: [GitHub Issues](https://github.com/rilsonjoas/MARS/issues)
+-   **Issues**: [GitHub Issues](https://github.com/rilsonjoas/io.github.rilsonjoas.MARS/issues)
 
 ---
 
@@ -286,7 +286,7 @@ This project maintains the original MARS license. See [MARSlicense.txt](MARSlice
 
 **🚀 Explore the world of MIPS architecture with MARS! 🚀**
 
-[![Download](https://img.shields.io/badge/Download-Flatpak-blue.svg)](https://github.com/rilsonjoas/MARS/releases)
+[![Download](https://img.shields.io/badge/Download-Flatpak-blue.svg)](https://github.com/rilsonjoas/io.github.rilsonjoas.MARS/releases)
 [![Documentation](https://img.shields.io/badge/Docs-Available-green.svg)](help/)
 [![Website](https://img.shields.io/badge/Website-Original-orange.svg)](https://dpetersanderson.github.io/)
 

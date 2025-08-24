@@ -40,4 +40,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/rilsonjoas/io.github.rilsonjoas.MARS.git
-        commit: e9434be2030a59929da49e1e2d091024340a6b5c
+        branch: main

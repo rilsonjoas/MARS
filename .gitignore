@@ -18,6 +18,7 @@ images/linuxtoys-*
 .idea/
 *.swp
 *.swo
+*.sh
 
 # Arquivos do sistema
 .DS_Store

@@ -33,26 +33,23 @@
   
   <url type="homepage">https://github.com/rilsonjoas/io.github.rilsonjoas.MARS</url>
   <url type="bugtracker">https://github.com/rilsonjoas/io.github.rilsonjoas.MARS/issues</url>
+  <url type="vcs-browser">https://github.com/rilsonjoas/io.github.rilsonjoas.MARS</url>
   
   <developer_name>Pete Sanderson and Kenneth Vollmar</developer_name>
   
   <screenshots>
     <screenshot type="default">
       <caption>MARS IDE main interface</caption>
-      <image>https://raw.githubusercontent.com/rilsonjoas/io.github.rilsonjoas.MARS/main/images/Edit_tab.jpg</image>
-    </screenshot>
-    <screenshot>
-      <caption>Execute tab with program execution</caption>
-      <image>https://raw.githubusercontent.com/rilsonjoas/io.github.rilsonjoas.MARS/main/images/Execute_tab.jpg</image>
+      <image>https://raw.githubusercontent.com/rilsonjoas/io.github.rilsonjoas.MARS/main/images/mars64.png</image>
     </screenshot>
   </screenshots>
   
   <content_rating type="oars-1.1" />
   
   <releases>
-    <release version="4.5" date="2014-08-01">
+    <release version="4.5" date="2024-12-01">
       <description>
-        <p>Latest stable release of MARS MIPS Assembler and Runtime Simulator.</p>
+        <p>MARS MIPS Assembler and Runtime Simulator packaged for Flatpak distribution. Includes complete Java environment and improved icons.</p>
       </description>
     </release>
   </releases>
